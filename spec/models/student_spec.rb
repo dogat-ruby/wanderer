@@ -1,5 +1,5 @@
 require 'spec_helper'
 
-describe Park do
+describe Student do
   pending "add some examples to (or delete) #{__FILE__}"
 end
