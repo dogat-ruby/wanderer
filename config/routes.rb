@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
+  resources :sessions
+
+  #get 'welcome/hello' #we want our /hello to go here so commented out
+
   resources :students
+
+  namespace :api do
+    resources :students
+  end
+  
+  get '/hello', to: 'welcome#hello'
+  get '/hello/:name', to: 'welcome#hello'
+  root to: 'welcome#hello'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

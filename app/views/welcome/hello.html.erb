@@ -1,0 +1,9 @@
+
+	<h1>Welcome to my page </h1>
+	<!--<%= Time.now %>-->
+	<p><%=@time%></p>
+	<p><%=@name%></p>
+	<p><%= link_to 'Show All Students', students_path(@students) %></p>
+	<p>You will be directed to the students page in  <%=$tick%>  seconds</p>
+	<script language="javascript" type="text/javascript">setTimeout("location.reload();",1000);</script>
+	

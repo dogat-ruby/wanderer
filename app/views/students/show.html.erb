@@ -19,11 +19,16 @@
   <strong>Profession:</strong>
   <%= @student.profession %>
 </p>
-
 <p>
   <strong>Favorite ice cream flavor:</strong>
   <%= @student.favorite_ice_cream_flavor %>
 </p>
+<p>
+  <strong>Address:</strong>
+  <%= @student.address %>
+</p>
+
+
 
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
